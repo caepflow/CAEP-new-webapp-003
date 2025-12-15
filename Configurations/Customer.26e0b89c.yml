@@ -27,3 +27,4 @@ associations:
       entity: ba052467-b81e-4755-b283-bba5184f5c2c
     type: aggregate
     multiplicity: one-to-many
+    navigation: client

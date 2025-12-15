@@ -37,3 +37,4 @@ associations:
       deleteBehavior: cascade
     type: associate
     multiplicity: one-to-many
+    navigation: rows
