@@ -40,3 +40,22 @@ children:
     type: contracts
   - id: 2f9f9e30-294c-43f8-a2d7-b0a49ced339a
     type: data
+datasources:
+  - name: InvoiceList
+    description: Datasource to query invoices
+    rootEntity: Invoice
+    mode: ReadOnly
+    includeAllFields: true
+    allowPersistence: false
+    fields:
+      - name: rows
+        type: InvoiceRow
+        isArray: true
+        isOptional: true
+        includeAllFields: 
+    sort:
+      - field: invoiceDate
+        direction: Ascending
+      - field: description
+        direction: Descending
+    pageSize: 25
