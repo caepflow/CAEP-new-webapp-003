@@ -1,18 +1,18 @@
 id: 1592f0e8-825f-4be7-b7ae-23781df15421
 type: controller
 interactions:
-- targetId: 1a73b25c-cb56-4b81-98d6-be1fb655a359
-  type: contracts
-  level: component
+  - targetId: 1a73b25c-cb56-4b81-98d6-be1fb655a359
+    type: contracts
+    level: component
 annotations:
-- namespace: c4modeler
-  name: position
-  value:
-    9eb6f0f9-d1ea-4fd2-a4da-62ede53e45f8:
-      x: 140.5
-      y: 125.5
-name: NewController
+  - namespace: c4modeler
+    name: position
+    value:
+      9eb6f0f9-d1ea-4fd2-a4da-62ede53e45f8:
+        x: 140.5
+        y: 125.5
+name: Invoices
 description: Rest API controller
 children:
-- id: 4fe1c657-ced9-47fc-b2a8-144201b15d5b
-  type: operation
+  - id: 4fe1c657-ced9-47fc-b2a8-144201b15d5b
+    type: operation

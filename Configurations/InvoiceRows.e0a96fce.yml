@@ -1,0 +1,29 @@
+id: 650fb677-9d02-1bdc-fb74-8e105fb50d82
+type: entity
+interactions: []
+annotations:
+  - namespace: c4modeler
+    name: position
+    value:
+      2f9f9e30-294c-43f8-a2d7-b0a49ced339a:
+        x: 261.35014836795256
+        y: -27.22469665648086
+entityType: domain
+name: InvoiceRows
+description: Description for NewEntity
+fields:
+  - type: string
+    description: New Field
+    isPublic: true
+    enumerable: true
+    name: productId
+  - type: string
+    description: New Field
+    isPublic: true
+    enumerable: true
+    name: quantity
+  - type: numeric
+    description: New Field
+    isPublic: true
+    enumerable: true
+    name: price

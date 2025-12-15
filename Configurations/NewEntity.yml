@@ -1,24 +1,39 @@
 id: ba052467-b81e-4755-b283-bba5184f5c2c
 type: entity
 annotations:
-- namespace: c4modeler
-  name: position
-  value:
-    2f9f9e30-294c-43f8-a2d7-b0a49ced339a:
-      x: 137.5
-      y: 67.5
+  - namespace: c4modeler
+    name: position
+    value:
+      2f9f9e30-294c-43f8-a2d7-b0a49ced339a:
+        x: -131.8867457962413
+        y: -130.52176063303662
 entityType: domain
-name: NewEntity
+name: Invoice
 fields:
-- type: string
-  description: New Field
-  isPublic: true
-  enumerable: true
-  name: name
-- type: NewEntityEnum
-  description: New Field
-  isPublic: true
-  enumerable: true
-  name: type
+  - type: date
+    description: New Field
+    isPublic: true
+    enumerable: true
+    name: invoiceDate
+  - type: numeric
+    description: New Field
+    isPublic: true
+    enumerable: true
+    name: totalAmount
+  - type: string
+    description: New Field
+    isPublic: true
+    enumerable: true
+    name: state
+  - type: string
+    description: New Field
+    isPublic: true
+    enumerable: true
+    name: description
 description: Entity
-associations: []
+associations:
+  - target:
+      entity: 650fb677-9d02-1bdc-fb74-8e105fb50d82
+      deleteBehavior: cascade
+    type: associate
+    multiplicity: one-to-many

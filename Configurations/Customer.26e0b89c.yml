@@ -1,0 +1,29 @@
+id: fc1aa129-8c9e-760c-94ed-7c2ae3064f74
+type: entity
+interactions: []
+annotations:
+  - namespace: c4modeler
+    name: position
+    value:
+      2f9f9e30-294c-43f8-a2d7-b0a49ced339a:
+        x: -97.40356083086056
+        y: 142.50824102897906
+entityType: domain
+name: Customer
+description: Description for NewEntity
+fields:
+  - type: string
+    description: New Field
+    isPublic: true
+    enumerable: true
+    name: name
+  - type: string
+    description: New Field
+    isPublic: true
+    enumerable: true
+    name: email
+associations:
+  - target:
+      entity: ba052467-b81e-4755-b283-bba5184f5c2c
+    type: aggregate
+    multiplicity: one-to-many
